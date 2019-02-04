@@ -16,7 +16,7 @@
 % character encoding
 \usepackage[utf8]{inputenc}
 \usepackage{fontawesome}
-\usepackage{fontspec}
+%\usepackage{fontspec}
 \usepackage{tabularx}
 \usepackage{ragged2e}
 
@@ -33,7 +33,7 @@
 % personal data
 \name{Casey}{Irvine}
 %\title{Curriculum Vitae}
-\address{16711 NE 21st St., Bellevue, WA 98008}{}{}
+\address{16711 NE 21st St. Bellevue, WA 98008}{}{}
 %\phone[mobile]{909-839-3097}
 %\phone[fixed]{01234 123456}
 %\phone[fax]{+3~(456)~789~012}
@@ -93,30 +93,34 @@
 \vspace*{-23mm}
 
 \begin{center}
-\begin{tabular}{ c c c c }
-\faEnvelopeO\enspace caseyi@outlook.com & \faMobile\enspace 520.360.0766 & \faGithub\enspace https://github.com/irvinec & \faLinkedin\enspace https://www.linkedin.com/in/caseyirvine\\
+\begin{tabular}{ c c }
+\faEnvelopeO\enspace caseyi@outlook.com & \faMobile\enspace 520.360.0766\\
+\end{tabular}
+\begin{tabular}{ c c }
+\faGithub\enspace \url{https://github.com/irvinec} & \faLinkedin\enspace \url{https://www.linkedin.com/in/caseyirvine\\}
 \end{tabular}
 \end{center}
 
 \section{SUMMARY}
-Software Engineer with 6+ years of experience at industry leaders.
+{Software Engineer with 6+ years of experience at industry leaders.
 Proficient in C, C++ and Python.
 Passionate about learning, developer productivity, low-level programming, AI and Machine Learning, and developing software that improves quality of life.
+}
 
 \section{SKILLS}
-\hline
-{\begin{AutoMultiColItemize}
+{\begin{multicols}{4}
+\begin{itemize}
   \item \textbf{C++}
   \item \textbf{Modern C++}
   \item C
   \item \textbf{Python}
-  \item C#
+  \item C\#
   \item JavaScript
   \item \textbf{COM}
-  \item \textbf{Windows Development}
-  \item Linux Development
-  \item Android Development
-  \item iOS Development
+  \item \textbf{Windows}
+  \item Linux
+  \item Android
+  \item iOS
   \item SQL
   \item CMake
   \item \textbf{WinDBG}
@@ -125,36 +129,36 @@ Passionate about learning, developer productivity, low-level programming, AI and
   \item Azure Dev Ops
   \item Scrum
   \item \textbf{WinRT}
-\end{AutoMultiColItemize}
+\end{itemize}
+\end{multicols}
 }
-\hline
 
 \section{EXPERIENCE}
-{\customcventry{Aug 2011 – Aug 2014, Mar 2015 – Present}{Software Engineer}{Microsoft}{Redmond, WA}{}}
+{\customcventry{Aug 2011 – Aug 2014, Mar 2015 – Present}{Software Engineer}{Microsoft}{Redmond, WA}{}
 {\begin{itemize}
-  \item C++ COM and WinRT development of core operating system and browser components.
+  \item C++, COM and WinRT development of core operating system and browser components.
   \item Windows, Windows Phone, Android, and iOS app development.
+  \item Received Windows Phone Excellence in Execution Award.
 \end{itemize}
 }
 
-{\customcventry{Aug 2014 – Feb 2015}{Software Engineer}{Amazon}{Seattle, WA}{}}
+{\customcventry{Aug 2014 – Feb 2015}{Software Engineer}{Amazon}{Seattle, WA}{}
 {\begin{itemize}
-  \item Python tools for testing service reliability and performance during server outages.
+  \item Developed Python tools for testing service reliability and performance during server outages.
   \item Worked on data ingestion and aggregation pipeline.
 \end{itemize}
 }
 
 \section{EDUCATION}
-{\customcventry{Aug 2006 - May 2011}{BS in Mathematics and Computer Science}{University of Arizona}{Tucson, AZ}{}{}}
+{\customcventry{Aug 2006 - May 2011}{BS in Mathematics and Computer Science}{University of Arizona}{Tucson, AZ}{}{}
 {\begin{itemize}
   \item Summa Cum Laude (GPA: 3.94/4.0).
   \item Undergraduate TA in Math and Computer Science.
   \item Undegraduate Research Team Lead.
-  {\begin{itemize}
+  \begin{itemize}
     \item Computation Photonics with Genetic Algorithm.
-    \item \href{https://www.math.arizona.edu/~brio/VIGRE/THzEmission.html}
+    \item \url{https://www.math.arizona.edu/~brio/VIGRE/THzEmission.html}
   \end{itemize}
-  }
 \end{itemize}
 }
 
@@ -166,15 +170,15 @@ Passionate about learning, developer productivity, low-level programming, AI and
 % Final Report
 % https://www.math.arizona.edu/~brio/VIGRE/THzEmissionsFinalReport.docx
 
-\section{AWARDS}
-{\begin{itemize}
-    \item Windows Phone Excellence in Execution Award - Microsoft 2012
-    \item Summa Cum Laude - University of Arizona 2011
-  \end{itemize}
-}
+% \section{AWARDS}
+% {\begin{itemize}
+%   \item Windows Phone Excellence in Execution Award - Microsoft 2012
+%   \item Summa Cum Laude - University of Arizona 2011
+% \end{itemize}
+% }
 
 \section{VOLUNTEERING}
-{\customcventry{Aug 2017 - Present}{Mentor and Guest Speaker}{Bellevue College}{Bellevue, WA}}
+{\customcventry{Aug 2017 - Present}{Mentor and Guest Speaker}{Bellevue College}{Bellevue, WA}{}
 {\begin{itemize}
   \item Mentored students for summer game design program.
   \item Mentored students for undergraduate research in Reinforcement Learning.
@@ -182,17 +186,17 @@ Passionate about learning, developer productivity, low-level programming, AI and
 \end{itemize}
 }
 
-\section{ADDITIONAL}
-\begin{minipage}{\maincolumnwidth}%
-    \small{
-        \begin{itemize}
-          \item Relevant Coursework: Data Structures and Algorithms, Natural Language Processing, Computer Systems, Databases, Computer Security, Abstract Algebra
-          \item President of XYZ Club, Public Relations Manager of Swarthmore QWE Club
-          \item Programming Languages: Python, C, C++, PHP, Java, HTML/CSS, Javascript, jQuery, NodeJS
-          \item Fluent in Gibberish, conversational in Nonsense
-        \end{itemize}}%
-\end{minipage}%
-}
+% \section{ADDITIONAL}{
+% \begin{minipage}{\maincolumnwidth}%
+%     \small{
+%         \begin{itemize}
+%           \item Relevant Coursework: Data Structures and Algorithms, Natural Language Processing, Computer Systems, Databases, Computer Security, Abstract Algebra
+%           \item President of XYZ Club, Public Relations Manager of Swarthmore QWE Club
+%           \item Programming Languages: Python, C, C++, PHP, Java, HTML/CSS, Javascript, jQuery, NodeJS
+%           \item Fluent in Gibberish, conversational in Nonsense
+%         \end{itemize}}%
+% \end{minipage}%
+% }
 
 \nocite{*}
 
