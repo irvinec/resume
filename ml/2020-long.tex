@@ -1,0 +1,240 @@
+%% 2020-long.tex
+
+% possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+\documentclass[11pt,a4paper,roman]{moderncv}
+
+% modern themes
+% style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvstyle{banking}
+% color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+\moderncvcolor{green}
+\definecolor{color1}{RGB}{85,107,47}
+% to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
+%\renewcommand{\familydefault}{\sfdefault}
+% suppress automatic page numbering for CVs longer than one page
+\nopagenumbers{}
+
+% character encoding
+\usepackage[utf8]{inputenc}
+\usepackage{fontawesome}
+%\usepackage{fontspec}
+\usepackage{tabularx}
+\usepackage{ragged2e}
+
+% adjust the page margins
+\usepackage[scale=0.8]{geometry}
+\usepackage{multicol}
+% if you want to change the width of the column with the dates
+%\setlength{\hintscolumnwidth}{3cm}
+% for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
+%\setlength{\makecvtitlenamewidth}{10cm}
+
+\usepackage{import}
+
+% personal data
+\name{Casey}{Irvine}
+%\title{Curriculum Vitae}
+\address{16711 NE 21st St. Bellevue, WA 98008}{}{}
+%\phone[mobile]{909-839-3097}
+%\phone[fixed]{01234 123456}
+%\phone[fax]{+3~(456)~789~012}
+%\email{xpan1@swarthmore.edu}
+%\homepage{shawnpan.me}
+%\extrainfo{}
+%\photo[64pt][0.4pt]{picture}
+%\quote{Some quote}
+
+\newcommand*{\customcventry}[7][.25em]{
+  \begin{tabular}{@{}l} 
+    {\bfseries #4}
+  \end{tabular}
+  \hfill % move it to the right
+  \begin{tabular}{l@{}}
+     {\bfseries #5}
+  \end{tabular} \\
+  \begin{tabular}{@{}l} 
+    {\itshape #3}
+  \end{tabular}
+  \hfill % move it to the right
+  \begin{tabular}{l@{}}
+     {\itshape #2}
+  \end{tabular}
+  \ifx&#7&%
+  \else{\\%
+    \begin{minipage}{\maincolumnwidth}%
+      \small#7%
+    \end{minipage}}\fi%
+  \par\addvspace{#1}}
+
+\newcommand*{\customcvproject}[4][.25em]{
+%\vfill\noindent
+  \begin{tabular}{@{}l} 
+    {\bfseries #2}
+  \end{tabular}
+  \hfill% move it to the right
+  \begin{tabular}{l@{}}
+     {\itshape #3}
+  \end{tabular}
+  \ifx&#4&%
+  \else{\\%
+    \begin{minipage}{\maincolumnwidth}%
+      \small#4%
+    \end{minipage}}\fi%
+  \par\addvspace{#1}}
+
+\setlength{\tabcolsep}{12pt}
+
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+
+\begin{document}
+
+\makecvtitle
+\vspace*{-23mm}
+
+\begin{center}
+\begin{tabular}{ c c }
+\faEnvelopeO\enspace caseyi@outlook.com & \faMobile\enspace 520.360.0766\\
+\end{tabular}
+\begin{tabular}{ c }
+\faLinkedin\enspace \url{https://www.linkedin.com/in/caseyirvine}\\
+\end{tabular}
+\begin{tabular}{ c c }
+\faGithub\enspace \url{https://github.com/irvinec} &
+\faGithub\enspace \url{https://github.com/cirvine-MSFT} 
+\end{tabular}
+\end{center}
+
+\section{SUMMARY}
+{Software Engineer with 8+ years of experience at industry leaders.
+Proficient in C++ and Python.
+Passionate about learning new technologies, developer productivity, devices, IoT, artificial intelligence, machine learning, and developing software that improves quality of life.
+}
+
+\section{SKILLS}
+{\begin{multicols}{4}
+\begin{itemize}
+  \item \textbf{C++}
+  \item \textbf{Modern C++}
+  \item C
+  \item \textbf{Python}
+  \item C\#
+  \item JavaScript
+  \item Java
+  \item PowerShell
+  \item \textbf{COM}
+  \item \textbf{Windows}
+  \item \textbf{WinRT}
+  \item Linux
+  \item Spark
+  \item Scala
+  \item scikit-learn
+  \item PyTorch
+  \item Keras
+  \item Pandas
+  \item NumPy
+  \item Jupyter
+  \item SQL
+  \item Anaconda
+  \item Docker
+  \item \textbf{CMake}
+  \item \textbf{Azure DevOps}
+  \item Scrum
+\end{itemize}
+\end{multicols}
+}
+
+\section{EXPERIENCE}
+{\customcventry{Aug 2011 – Aug 2014, Mar 2015 – Present}{Software Engineer}{Microsoft}{Redmond, WA}{}
+{\begin{itemize}
+  \item Used Azure DevOps to build and deploy Docker containers to Azure Container Registry for local and automated cross-platform builds.
+  \item Used Azure DevOps to build and deploy Docker containers for containerized client applications used in functional and end to end testing.
+  \item Used Azure DevOps to build and publish custom Yocto base and update images. Reduced build time from 6 hours to less than 10 minutes with custom build agents.
+  \item Automated cross-platform and cross-architecture build using Python, CMake, Vcpkg, Docker and Azure DevOps.
+  \item Developed OSS reference client for IoT device updates in C, C++ and CMake.
+  \item Refactored OSS C++ Correlation Vector implementation and build to be cross-platform.
+  \item C++, COM and WinRT development of core operating system and browser components.
+  \item Received Windows Phone Excellence in Execution Award.
+\end{itemize}
+}
+
+{\customcventry{Aug 2014 – Feb 2015}{Software Engineer}{Amazon}{Seattle, WA}{}
+{\begin{itemize}
+  \item Developed Python tools for testing service reliability and performance during server outages.
+  \item Worked on data ingestion and aggregation pipeline.
+\end{itemize}
+}
+
+\pagebreak
+
+\section{EDUCATION}
+{\customcventry{Aug 2019 - May 2023 (expected graduation date)}{MS in Computer Science}{Georgia Institute of Technology}{Atlanta, GA}
+{}{}
+{
+\begin{itemize}
+  \item Specialization in machine learning.
+  \item CSE 6250 - Big Data for Health Informatics
+  \begin{itemize}
+  	\item Final project used PySpark to process and aggregate clinical note data for patients from MIMIC III dataset. Use Pytorch to implement and train model built with custom RNN containing GRU cells with a model created using transfer learning with pre-trained BERT model that was trained on domain specific corpus. Models were trained and evaluated on predicting patient mortality from clinical note data.
+  	\item Used Pandas, Spark, Spark GraphX, Scala, and PySpark for processing and analyzing healthcare data.
+  	\item Used scikit-learn to train and evaluate various machine learning models.
+  	\item Used PyTorch to implement, train, and evaluate RNNs and CNNs for timeseries healthcare data.
+  \end{itemize}
+  \item CS 7638 - Artificial Intelligence for Robotics
+  \begin{itemize}
+  	\item Implemented Kalmann filter and Particle filter for localization in Python.
+  \end{itemize}
+ \end{itemize}
+}
+
+\vspace{12pt}
+
+{\customcventry{Aug 2006 - May 2011}{BS in Mathematics and Computer Science}{University of Arizona}{Tucson, AZ}{}{}
+{\begin{itemize}
+  \item Summa Cum Laude (GPA: 3.94/4.0).
+  \item Undergraduate TA in math and computer science.
+  \item Undergraduate Research Team Lead.
+  \begin{itemize}
+    \item \textit{Terahertz Thermal Emission Optimization with Genetic Algorithm}.
+    \item \url{https://www.math.arizona.edu/~brio/VIGRE/THzEmission.html}
+  \end{itemize}
+\end{itemize}
+}
+
+% Undergrad Research
+% Home Page
+% https://www.math.arizona.edu/~brio/VIGRE/THzEmission.html
+% Project Description
+% https://www.math.arizona.edu/~brio/VIGRE/THzEmissionDescription.pdf
+% Final Report
+% https://www.math.arizona.edu/~brio/VIGRE/THzEmissionsFinalReport.docx
+
+% \section{AWARDS}
+% {\begin{itemize}
+%   \item Windows Phone Excellence in Execution Award - Microsoft 2012
+%   \item Summa Cum Laude - University of Arizona 2011
+% \end{itemize}
+% }
+
+\section{VOLUNTEERING}
+{\customcventry{Aug 2017 - Present}{Mentor and Guest Speaker}{Bellevue College}{Bellevue, WA}{}
+{\begin{itemize}
+  \item Mentored students for summer game design program.
+  \item Mentored students for undergraduate research in reinforcement learning. Helped Students build DQN and Gym environment to control Sphero robot in a physical environment.
+  \item STEM Advisory Board member.
+  \item 2019 Global Game Jam judge.
+\end{itemize}
+}
+
+% \section{ADDITIONAL}{
+% \begin{minipage}{\maincolumnwidth}%
+%     \small{
+%         \begin{itemize}
+%         \end{itemize}}%
+% \end{minipage}%
+% }
+
+\nocite{*}
+
+\end{document}
